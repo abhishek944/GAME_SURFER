@@ -3,16 +3,6 @@ import random
 import constants
 from player import Player
 
-def mod(camera , bg_image_rect):
-	if camera >= 0:
-		return 0
-	else:
-		if abs(camera) + abs(constants.SCREEN_WIDTH) > bg_image_rect.right:
-			camera = -1 * (bg_image_rect.right - constants.SCREEN_WIDTH)
-			return camera
-		else:
-			return camera
-
 def main():
 
 	# start pygame
